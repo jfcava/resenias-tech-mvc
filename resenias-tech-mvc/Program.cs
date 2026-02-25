@@ -1,7 +1,13 @@
+using Microsoft.EntityFrameworkCore;
+using resenias_tech_mvc.Data;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+// Configurar la cadena de conexión a la base de datos
+builder.Services.AddDbContext<ReseniasDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DbConnection")));
 
 var app = builder.Build();
 
