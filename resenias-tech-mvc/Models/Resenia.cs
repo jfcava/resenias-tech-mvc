@@ -7,6 +7,5 @@
         public int Puntuacion { get; set; }
         public string Comentario { get; set; }
         public DateTime Fecha { get; set; }
-
     }
 }

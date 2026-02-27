@@ -1,4 +1,6 @@
-﻿namespace resenias_tech_mvc.Models
+﻿using System.ComponentModel;
+
+namespace resenias_tech_mvc.Models
 {
     public class Articulo
     {
